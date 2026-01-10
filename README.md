@@ -9,7 +9,7 @@ This is the repository for the paper: **Stable-RAG: Mitigating Retrieval-Permuta
  🚀 2026.01: Initial release of codes
 
 
-Our code and datasets will be available upon acceptance.
+Our code, datasets, and model weights will be made publicly available upon acceptance.
 
 
 ## Content
