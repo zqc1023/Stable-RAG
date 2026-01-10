@@ -42,17 +42,6 @@ def id_to_docs(docs, order):
     return [docs[i] for i in order]
 
 
-def filter_long_answers(dpo_list, tokenizer=tokenizer, threshold: int = 10):
-    """Filter out samples with overly long chosen/rejected answers."""
-    filtered = []
-    for item in dpo_list:
-        chosen_len = len(tokenizer(item["chosen"])["input_ids"])
-        rejected_len = len(tokenizer(item["rejected"])["input_ids"])
-        if max(chosen_len, rejected_len) <= threshold:
-            filtered.append(item)
-    return filtered
-
-
 def build_dpo_sample(question, documents, chosen, rejected):
     system_prompt = (
         "You are a helpful, respectful, and honest assistant. "
