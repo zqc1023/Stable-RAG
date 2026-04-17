@@ -7,8 +7,9 @@ This is the repository for the paper: **Stable-RAG: Mitigating Retrieval-Permuta
 ## Updates
 
 
-🎉 2026-04-06: Stable-RAG is accepted to ACL 2026 Main!
-🚀 2026-01-10: Initial release of codes
+- 🎉 2026-04-06: Stable-RAG is accepted to ACL 2026 Main!
+
+- 🚀 2026-01-10: Initial release of codes
 
 
 Our code, datasets, and model weights will be made publicly available upon acceptance.
