@@ -6,7 +6,9 @@ This is the repository for the paper: **Stable-RAG: Mitigating Retrieval-Permuta
 
 ## Updates
 
- 🚀 2026.01: Initial release of codes
+
+🎉 2026-04-06: Stable-RAG is accepted to ACL 2026 Main!
+🚀 2026-01-10: Initial release of codes
 
 
 Our code, datasets, and model weights will be made publicly available upon acceptance.
@@ -18,8 +20,8 @@ Our code, datasets, and model weights will be made publicly available upon accep
 3. [Data Construction](#data-construction)
 4. [Training](#training)
 5. [Inference](#inference)
-6. [More Results](#more-results)
-7. [FAQ](#faq)
+6. [FAQ](#faq)
+7. [Citation](#citation)
 
 
 
@@ -115,15 +117,6 @@ We adopt Substring Exact Match (SubEM) and F1 for evaluation. SubEM checks wheth
 ```shell
 bash  Stable-RAG/bash/inference.sh
 ```
-## More Results
-> **Note:** This corresponds to Section 5.3 in the paper: *Internal Model Behaviors after DPO*.
-
-This figure additionally shows a variant of our method (w/o PC), which does not train on order-sensitive samples at all.
-<img src="assets/without_PC.png" alt="Model Architecture" width="300"/>
-
-We can see that the increased clusters mainly stems from DPO-induced answer diversity rather than direct training on sensitive samples. For instance, for the same query "when was the cat and mouse act introduced?" and order, the response changes from "1913." to “"introduced in April 1913." after DPO. 
-
-
 
 
 ## FAQ
@@ -149,3 +142,14 @@ Training is conducted on two NVIDIA RTX PRO 6000 GPUs. Each epoch takes roughly 
 
 No. During our data construction, we use greedy decoding. During inference, the generation temperature is set to 0.01, which is almost equivalent to greedy decoding. This ensures that output variations primarily reflect document-order sensitivity rather than sampling randomness.
 
+## Citation
+If you feel this project is helpful, please consider cite our paper😊.
+
+```
+@article{zhang2026stable,
+  title={Stable-RAG: Mitigating Retrieval-Permutation-Induced Hallucinations in Retrieval-Augmented Generation},
+  author={Zhang, Qianchi and Zhang, Hainan and Pang, Liang and Zheng, Hongwei and Zheng, Zhiming},
+  journal={arXiv preprint arXiv:2601.02993},
+  year={2026}
+}
+```
