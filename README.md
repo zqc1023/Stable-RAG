@@ -1,4 +1,4 @@
-
+<h1 align="center"> Stable-RAG: Mitigating Retrieval-Permutation-Induced Hallucinations in Retrieval-Augmented Generation</a></h1>
 
 <div align="center"> 
 
@@ -13,7 +13,13 @@
 <img src="assets/architecture.png" alt="Model Architecture" width="700"/>
 
 
-This is the repository for the paper: **Stable-RAG: Mitigating Retrieval-Permutation-Induced Hallucinations in Retrieval-Augmented Generation**.
+This is the repository for the paper: **Stable-RAG: Mitigating Retrieval-Permutation-Induced Hallucinations in Retrieval-Augmented Generation**. Our method comprises three stages:
+
+- Hidden State Clustering
+
+- Preference Data Construction
+
+- Alignment with DPO
 
 # Updates
 
