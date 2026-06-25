@@ -166,11 +166,25 @@ No. During our data construction, we use greedy decoding. During inference, the 
 If you feel this project is helpful, please consider cite our paper😊.
 
 ```
-@article{zhang2026stable,
-  title={Stable-RAG: Mitigating Retrieval-Permutation-Induced Hallucinations in Retrieval-Augmented Generation},
-  author={Zhang, Qianchi and Zhang, Hainan and Pang, Liang and Zheng, Hongwei and Zheng, Zhiming},
-  journal={arXiv preprint arXiv:2601.02993},
-  year={2026}
+@inproceedings{zhang-etal-2026-stable,
+    title = "Stable-{RAG}: Mitigating Retrieval-Permutation-Induced Hallucinations in Retrieval-Augmented Generation",
+    author = "Zhang, Qianchi  and
+      Zhang, Hainan  and
+      Pang, Liang  and
+      Zheng, Hong-Wei  and
+      Zheng, Zhiming",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1188/",
+    pages = "25907--25926",
+    ISBN = "979-8-89176-390-6"
 }
 
 ```
